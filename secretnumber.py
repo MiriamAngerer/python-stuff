@@ -1,6 +1,6 @@
 secret = 7
 guess = int(raw_input("secret: "))
-wrong = "Try again!"
+wrong = "Nice try! Maybe next time!"
 right = "Congratulations!"
 
 if guess == secret:
