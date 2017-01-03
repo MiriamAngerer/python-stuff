@@ -1,9 +1,9 @@
 import random
 
-print "Welcome to Secret Number 1.2. Guess the secret number between 1 and 10!" + "\n"
+print "Welcome to Secret Number 1.2. Guess the secret number between 1 and 30!" + "\n"
 
 def main():
-    secret = random.randint(1, 10)
+    secret = random.randint(1, 30)
     guess = 0
 
     while guess != secret:
@@ -12,8 +12,8 @@ def main():
         if guess == secret:
             print "You did it - Congratulations! It's number %s!" % str(secret)
 
-        elif guess > 10 or guess < 1:
-            print "Your number is needs to be between 1 and 10!"
+        elif guess > 30 or guess < 1:
+            print "Your number is needs to be between 1 and 30!"
 
         else:
             print "Sorry, %s is not correct." % str(guess)
