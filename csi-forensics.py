@@ -3,58 +3,58 @@ dna = open("dna.txt").read()
 match = {}
 
 # hair color
-if dna.find("CCAGCAATCGC"):
+if "CCAGCAATCGC" in dna:
     match["hair color"] = "black"
 
-elif dna.find("GCCAGTGCCG"):
+elif "GCCAGTGCCG" in dna:
     match["hair color"] = "brown"
 
-elif dna.find("TTAGCTATCGC"):
+elif "TTAGCTATCGC" in dna:
     suspect["hair color"] = "blonde"
 
 # Facial shape
-if dna.find("GCCACGG"):
+if "GCCACGG" in dna:
     match["facial shape"] = "square"
 
-elif dna.find("ACCACAA"):
+elif "ACCACAA" in dna:
     match["facial shape"]  = "round"
 
-elif dna.find("AGGCCTCA"):
+elif "AGGCCTCA" in dna:
     match["facial shape"]  = "oval"
 
 # Eye color
-if dna.find("TTGTGGTGGC"):
+if "TTGTGGTGGC" in dna:
     match["eye color"] = "blue"
 
-elif dna.find("GGGAGGTGGC"):
+elif "GGGAGGTGGC" in dna:
     match["eye color"] = "green"
 
-elif dna.find("AAGTAGTGAC"):
+elif "AAGTAGTGAC" in dna:
     match["eye color"] = "brown"
 
 # Gender
-if dna.find("TGAAGGACCTTC"):
+if "TGAAGGACCTTC" in dna:
     match["gender"] = "female"
 
-elif dna.find("TGCAGGAACTTC"):
+elif "TGCAGGAACTTC" in dna:
     match["gender"] = "male"
 
 # Further characteristic
-if dna.find("AAAACCTCA"):
+if "AAAACCTCA" in dna:
     match["further characteristic"] = "white"
 
-elif dna.find("CGACTACAG"):
+elif "CGACTACAG" in dna:
     match["further characteristic"] = "black"
 
-elif dna.find("CGCGGGCCG"):
+elif "CGCGGGCCG" in dna:
     match["further characteristic"] = "asian"
 
 
 
-Eva = {"hair color" : "blonde", "facial_shape" : "oval", "eye color" : "blue", "gender" : "female", "further characteristic" : "white"}
-Larisa = {"hair color" : "brown", "facial_shape" : "oval", "eye color" : "brown", "gender" : "female", "further characteristic" : "white"}
-Matej = {"hair color" : "black", "facial_shape" : "oval", "eye color" : "blue", "gender" : "male", " further characteristic" : "white"}
-Miha = {"hair color" : "brown", "facial_shape" : "square", "eye color" : "green", "gender" : "male", "further characteristic" : "white"}
+Eva = {"hair color" : "blonde", "facial shape" : "oval", "eye color" : "blue", "gender" : "female", "further characteristic" : "white"}
+Larisa = {"hair color" : "brown", "facial shape" : "oval", "eye color" : "brown", "gender" : "female", "further characteristic" : "white"}
+Matej = {"hair color" : "black", "facial shape" : "oval", "eye color" : "blue", "gender" : "male", " further characteristic" : "white"}
+Miha = {"hair color" : "brown", "facial shape" : "square", "eye color" : "green", "gender" : "male", "further characteristic" : "white"}
 
 if Eva == match:
     print "Eva ate all the ice cream."
