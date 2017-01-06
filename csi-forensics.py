@@ -1,5 +1,10 @@
 dna = open("dna.txt").read()
 
+Eva = {"hair color" : "blonde", "facial shape" : "oval", "eye color" : "blue", "gender" : "female", "further characteristic" : "white"}
+Larisa = {"hair color" : "brown", "facial shape" : "oval", "eye color" : "brown", "gender" : "female", "further characteristic" : "white"}
+Matej = {"hair color" : "black", "facial shape" : "oval", "eye color" : "blue", "gender" : "male", " further characteristic" : "white"}
+Miha = {"hair color" : "brown", "facial shape" : "square", "eye color" : "green", "gender" : "male", "further characteristic" : "white"}
+
 match = {}
 
 # hair color
@@ -48,14 +53,9 @@ elif "CGACTACAG" in dna:
 
 elif "CGCGGGCCG" in dna:
     match["further characteristic"] = "asian"
+        
 
-
-
-Eva = {"hair color" : "blonde", "facial shape" : "oval", "eye color" : "blue", "gender" : "female", "further characteristic" : "white"}
-Larisa = {"hair color" : "brown", "facial shape" : "oval", "eye color" : "brown", "gender" : "female", "further characteristic" : "white"}
-Matej = {"hair color" : "black", "facial shape" : "oval", "eye color" : "blue", "gender" : "male", " further characteristic" : "white"}
-Miha = {"hair color" : "brown", "facial shape" : "square", "eye color" : "green", "gender" : "male", "further characteristic" : "white"}
-
+        
 if Eva == match:
     print "Eva ate all the ice cream."
 
@@ -67,15 +67,8 @@ elif Matej == match:
 
 elif Miha == match:
     print "Miha ate all the ice cream."
-
+    
 else:
     print "None of the suspects ate the ice cream. The ice cream thief is still out there. Probably looking for more ice cream right now."
-    print "---------------------------------------------------------------------"
-    print "We are looking for a person with following characteristics:"
-    for i in match:
-        characteristics = match.items()
-        for k, v in characteristics:
-            print k, ":", v
-        break
-    print "---------------------------------------------------------------------"
+ 
 
