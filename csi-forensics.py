@@ -15,7 +15,7 @@ elif "GCCAGTGCCG" in dna:
     match["hair color"] = "brown"
 
 elif "TTAGCTATCGC" in dna:
-    suspect["hair color"] = "blonde"
+    match["hair color"] = "blonde"
 
 # Facial shape
 if "GCCACGG" in dna:
